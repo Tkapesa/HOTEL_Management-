@@ -28,6 +28,7 @@ export const fetchHotelDetails = async (hotelId) => {
 // Add aliases for components that expect different function names
 export const getHotels = fetchHotels;
 export const getHotelDetails = fetchHotelDetails;
+export const getHotelById = fetchHotelDetails;
 
 // Room API calls
 export const fetchRooms = async (hotelId) => {

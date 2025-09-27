@@ -1,0 +1,17 @@
+/* Temporary fix for gigantic icons */
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.w-4 svg, .w-4 { width: 1rem !important; height: 1rem !important; }
+.w-5 svg, .w-5 { width: 1.25rem !important; height: 1.25rem !important; }
+.w-6 svg, .w-6 { width: 1.5rem !important; height: 1.5rem !important; }
+.w-8 svg, .w-8 { width: 2rem !important; height: 2rem !important; }
+.w-16 svg, .w-16 { width: 4rem !important; height: 4rem !important; }
+
+/* Fix for search icon specifically */
+button svg {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
