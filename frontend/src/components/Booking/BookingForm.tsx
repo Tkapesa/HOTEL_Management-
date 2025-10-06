@@ -65,9 +65,9 @@ const BookingForm: React.FC<BookingFormProps> = ({
   const validateStep = (step: number): boolean => {
     switch (step) {
       case 1:
-        return formData.checkInDate && formData.checkOutDate && formData.roomType && formData.guests > 0;
+        return !!(formData.checkInDate && formData.checkOutDate && formData.roomType && formData.guests > 0);
       case 2:
-        return formData.firstName.trim() && formData.lastName.trim() && formData.email.trim() && formData.phone.trim();
+        return !!(formData.firstName.trim() && formData.lastName.trim() && formData.email.trim() && formData.phone.trim());
       default:
         return true;
     }

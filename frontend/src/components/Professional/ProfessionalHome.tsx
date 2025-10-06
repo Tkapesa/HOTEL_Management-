@@ -16,30 +16,6 @@ const ProfessionalHome: React.FC = () => {
 
   return (
     <div className="professional-home">
-      {/* Premium Header */}
-      <header className="premium-header">
-        <nav className="nav-container">
-          <div className="nav-brand">
-            <div className="logo-icon">
-              <div className="hotel-icon"></div>
-            </div>
-            <span className="brand-text">HotelLux</span>
-          </div>
-          
-          <div className="nav-links">
-            <a href="#" className="nav-link">Hotels</a>
-            <a href="#" className="nav-link">Destinations</a>
-            <a href="#" className="nav-link">Deals</a>
-            <a href="#" className="nav-link">Business Travel</a>
-          </div>
-
-          <div className="nav-actions">
-            <button className="btn-ghost">Sign In</button>
-            <button className="btn-primary">Sign Up</button>
-          </div>
-        </nav>
-      </header>
-
       {/* Hero Section with Search */}
       <section className="hero-section">
         <div className="hero-background">
