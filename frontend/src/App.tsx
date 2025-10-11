@@ -13,6 +13,7 @@ import Register from './components/Auth/Register';
 import Dashboard from './pages/Dashboard';
 import BookingConfirmation from './pages/BookingConfirmation';
 import BookingHistoryPage from './pages/BookingHistoryPage';
+import Destinations from './pages/Destinations';
 
 const App: React.FC = () => {
   return (
@@ -29,15 +30,7 @@ const App: React.FC = () => {
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/booking-confirmation" component={BookingConfirmation} />
             <Route path="/booking-history" component={BookingHistoryPage} />
-            {/* Fallback for destinations route */}
-            <Route path="/destinations" render={() => (
-              <div className="min-h-screen flex items-center justify-center">
-                <div className="text-center">
-                  <h1 className="text-4xl font-bold text-gray-900 mb-4">Destinations</h1>
-                  <p className="text-gray-600">Coming soon! Explore amazing destinations worldwide.</p>
-                </div>
-              </div>
-            )} />
+            <Route path="/destinations" component={Destinations} />
           </Switch>
         </main>
         <Footer />
