@@ -127,66 +127,91 @@ const ProfessionalHome: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Destinations */}
+      {/* Featured Destinations - Trump Hotel Style Grid */}
       <section className="destinations-section">
         <div className="container">
           <div className="section-header">
-            <h2>Popular Destinations</h2>
-            <p>Discover the world's most sought-after travel destinations</p>
+            <h2>Exquisite Destinations</h2>
+            <p>Curated luxury experiences in the world's most distinguished locations</p>
           </div>
 
-          <div className="destinations-grid">
-            <div className="destination-card featured">
-              <div className="destination-image paris-bg"></div>
-              <div className="destination-info">
-                <h3>Paris</h3>
-                <p>2,847 properties</p>
-                <span className="price-from">From $120/night</span>
+          <div className="luxury-destinations-grid">
+            {/* Large Featured - Paris */}
+            <div className="destination-card large-feature">
+              <div className="destination-image paris-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">Paris, France</div>
+                    <h3 className="destination-title-overlay">The City of Light</h3>
+                    <p className="destination-subtitle-overlay">2,847 Luxury Properties</p>
+                    <div className="destination-price-overlay">From $120<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="destination-card">
-              <div className="destination-image tokyo-bg"></div>
-              <div className="destination-info">
-                <h3>Tokyo</h3>
-                <p>1,923 properties</p>
-                <span className="price-from">From $95/night</span>
+            {/* Medium Featured - Tokyo */}
+            <div className="destination-card medium-feature">
+              <div className="destination-image tokyo-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">Tokyo, Japan</div>
+                    <h3 className="destination-title-overlay">Modern Elegance</h3>
+                    <p className="destination-subtitle-overlay">1,923 Properties</p>
+                    <div className="destination-price-overlay">From $95<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="destination-card">
-              <div className="destination-image bali-bg"></div>
-              <div className="destination-info">
-                <h3>Bali</h3>
-                <p>3,156 properties</p>
-                <span className="price-from">From $45/night</span>
+            {/* Medium Featured - Dubai */}
+            <div className="destination-card medium-feature">
+              <div className="destination-image dubai-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">Dubai, UAE</div>
+                    <h3 className="destination-title-overlay">Arabian Luxury</h3>
+                    <p className="destination-subtitle-overlay">1,567 Properties</p>
+                    <div className="destination-price-overlay">From $85<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="destination-card">
-              <div className="destination-image nyc-bg"></div>
-              <div className="destination-info">
-                <h3>New York</h3>
-                <p>4,721 properties</p>
-                <span className="price-from">From $180/night</span>
+            {/* Standard Cards */}
+            <div className="destination-card standard">
+              <div className="destination-image bali-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">Bali, Indonesia</div>
+                    <h3 className="destination-title-overlay">Tropical Paradise</h3>
+                    <div className="destination-price-overlay">From $45<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="destination-card">
-              <div className="destination-image london-bg"></div>
-              <div className="destination-info">
-                <h3>London</h3>
-                <p>2,384 properties</p>
-                <span className="price-from">From $140/night</span>
+            <div className="destination-card standard">
+              <div className="destination-image nyc-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">New York, USA</div>
+                    <h3 className="destination-title-overlay">The Big Apple</h3>
+                    <div className="destination-price-overlay">From $180<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="destination-card">
-              <div className="destination-image dubai-bg"></div>
-              <div className="destination-info">
-                <h3>Dubai</h3>
-                <p>1,567 properties</p>
-                <span className="price-from">From $85/night</span>
+            <div className="destination-card standard">
+              <div className="destination-image london-bg">
+                <div className="destination-overlay">
+                  <div className="destination-content-overlay">
+                    <div className="destination-location">London, UK</div>
+                    <h3 className="destination-title-overlay">Royal Heritage</h3>
+                    <div className="destination-price-overlay">From $140<span>/night</span></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
